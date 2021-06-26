@@ -7,10 +7,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eurocopa 2020</title>
 
+    <style>
+         :root {
+            --main-color: linear-gradient(rgba(144, 247, 236, 1), rgba(50, 204, 188, 1));
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        
+        .header .border-navigate {
+            background-image: var(--main-color);
+            width: 100%;
+            height: 30px;
+        }
+        
+        .navigate {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            height: 100px;
+        }
+        
+        .content {
+            height: calc(100vh - 130px);
+        }
+        
+        .footer {
+            background-image: var(--main-color);
+        }
+        
+        .menu-link {
+            text-align: center;
+            margin-right: 10px;
+            margin-left: 10px;
+            width: 100px;
+            line-height: 40px;
+        }
+        
+        .header .navigate .menu-link a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            background-color: var(--main-color);
+        }
+        
+        .footer .navigate .menu-link a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            background-color: var(--main-color);
+        }
+        
+        .header .navigate .menu-link a:hover,
+        .header .navigate .menu-link a:active,
+        .menu-link:hover {
+            background-image: var(--main-color);
+            font-weight: bold;
+        }
+        
+        .footer .navigate .menu-link a:hover,
+        .footer .navigate .menu-link a:active {
+            background-color: black;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
     <header id="header" class="header">
+        <div class="border-navigate"></div>
         <nav class="navigate">
             <div class="menu-link"><a href="">HOME</a></div>
             <div class="menu-link"><a href="">SELEÇÕES</a></div>
@@ -20,16 +89,31 @@
         </nav>
     </header>
 
-    <section>
-        <h3>Sobre o evento</h3>
-    </section>
-    <section>
+    <div class="content">
 
-    </section>
+        <section class="section">
+            <img src="" alt="">
+        </section>
 
-    <section>
+        <section class="section">
+            <h3 class="title-section">Sobre o evento</h3>
+            <p class="text-section">lorem ipsouuum</p>
+        </section>
 
-    </section>
+        <section class="section">
+            <h3 class="title-section">Maiores Campeões</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr></tr>
+                </tbody>
+            </table>
+            <p class="text-section">lorem ipsouuum</p>
+        </section>
+
+    </div>
 
     <footer class="footer">
         <div class="footer-image"><img src="" alt=""></div>
