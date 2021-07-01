@@ -23,3 +23,19 @@
     text-align: center;
     font-size: 15px;
 }
+
+@media (max-width: 600px)
+{
+  .selecao img 
+   {
+    height: 50px;
+   }
+}
+
+@media (min-width: 1500px)
+{
+  .selecao img 
+   {
+    height: 150px;
+   }
+}

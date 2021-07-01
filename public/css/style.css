@@ -129,6 +129,7 @@ hr.title-section-line {
     margin-top: 25px;
     margin-bottom: 25px;
     color: black;
+    text-align: justify;
 }
 
 .table-champions {
@@ -164,4 +165,22 @@ hr.title-section-line {
     margin-right: 10%;
     margin-left: 10%;
     margin-top: 25px;
+}
+
+.video {
+    width: 60%;
+    height: 400px;
+    
+}
+
+.section-video {
+    text-align: center;
+}
+
+@media (min-width: 600px) and (max-width: 780px)
+{
+  .footer-margem 
+   {
+    display: none;
+   }
 }
