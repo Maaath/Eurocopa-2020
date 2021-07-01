@@ -108,7 +108,12 @@ body {
 .section {
     margin-right: 10%;
     margin-left: 10%;
+    margin-bottom: 25px;
     margin-top: 25px;
+}
+
+.section.section-inline {
+    display: flex;
 }
 
 hr {
