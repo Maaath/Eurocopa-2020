@@ -177,10 +177,66 @@ hr.title-section-line {
     text-align: center;
 }
 
-@media (min-width: 600px) and (max-width: 780px)
+@media (min-width: 10px) and (max-width: 780px)
 {
   .footer-margem 
    {
     display: none;
+   }
+}
+
+@media (min-width: 10px) and (max-width: 376px)
+{
+  .footer 
+   {
+    display: none;
+   }
+
+   .video
+   {
+       width: 60%;
+       height: 160px;
+   }
+}
+
+@media (min-width: 376px) and (max-width: 768px)
+{
+  .footer 
+   {
+    height: 130px;
+   }
+
+   .video
+   {
+       width: 70%;
+       height: 250px;
+   }
+}
+
+@media (min-width: 769px) and (max-width: 1024px)
+{
+  .footer 
+   {
+    height: 160px;
+   }
+
+   .video
+   {
+       width: 60%;
+       height: 280px;
+   }
+}
+
+@media (min-width: 1025px)
+{
+  .footer 
+   {
+    height: 180px;
+   }
+
+   .video
+   {
+       width: 60%;
+       height: 400px;
    }
 }

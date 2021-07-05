@@ -24,18 +24,35 @@
     font-size: 15px;
 }
 
-@media (max-width: 600px)
+@media (max-width: 300px)
 {
   .selecao img 
    {
-    height: 50px;
+    height: 25px;
    }
 }
 
-@media (min-width: 1500px)
+@media (min-width: 600px)
+{
+  .selecao img 
+   {
+    height: 70px;
+   }
+}
+
+@media (min-width: 900px)
+{
+  .selecao img 
+   {
+    height: 100px;
+   }
+}
+
+@media (min-width: 1200px)
 {
   .selecao img 
    {
     height: 150px;
    }
 }
+
