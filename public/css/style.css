@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
 :root {
     --main-color: linear-gradient(rgba(144, 247, 236, 1), rgba(50, 204, 188, 1));
 }
@@ -9,13 +11,14 @@
 }
 
 body {
-    font-family: Source Serif Pro, sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .header .border-navigate {
     background-image: var(--main-color);
     width: 100%;
     height: 30px;
+    
 }
 
 .navigate {
@@ -24,6 +27,7 @@ body {
     align-items: center;
     flex-direction: row;
     height: 100px;
+    
 }
 
 .content {
@@ -62,7 +66,9 @@ body {
     width: 100px;
     line-height: 40px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 0.75em; /* utilizar 'em' por ser um valor relativo ao valor padrão de 1px (cada dispositivo pode ter um valor diferente para 1px) OBS: 1em = 16px */
+    border-radius: 30%;
+    transition: all 400ms ease;
 }
 
 .header .navigate .menu-link a {
@@ -70,6 +76,8 @@ body {
     color: black;
     text-decoration: none;
     background-color: var(--main-color);
+    box-shadow: 5px 5px 5px rgba(144, 247, 236, 1);
+    border-radius: 30%;
 }
 
 .footer .navigate .menu-link a {
@@ -77,6 +85,8 @@ body {
     color: white;
     text-decoration: none;
     background-color: var(--main-color);
+    box-shadow: 5px 5px 5px rgba(144, 247, 236, 1);
+    border-radius: 30%;
 }
 
 .header .navigate .menu-link a:hover,
@@ -84,6 +94,7 @@ body {
 .menu-link:hover {
     background-image: var(--main-color);
 }
+
 
 .footer .navigate .menu-link a:hover,
 .footer .navigate .menu-link.active {
@@ -123,6 +134,12 @@ hr {
 
 hr.title-section-line {
     width: 50px;
+    
+}
+
+.section .title-section{
+    font-family: 'Fredericka the Great', "Comic Sans MS", cursive;
+    font-weight: bolder;
 }
 
 .section .text-section {
@@ -130,6 +147,8 @@ hr.title-section-line {
     margin-bottom: 25px;
     color: black;
     text-align: justify;
+    text-indent: 2em;
+    
 }
 
 .table-champions {

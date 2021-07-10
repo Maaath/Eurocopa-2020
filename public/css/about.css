@@ -12,13 +12,13 @@
 }
 
 .collaborator-name {
-    font-size: 18px;
+    font-size: 1.2em;
     text-align: center;
 }
 
 .collaborator-description {
     color: #c1c1c1;
-    font-size: 12px;
+    font-size: 0.7em;
     text-align: center;
 }
 
