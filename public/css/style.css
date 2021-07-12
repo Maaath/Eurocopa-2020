@@ -12,6 +12,11 @@
 
 body {
     font-family: "Comic Sans MS", cursive, sans-serif;
+    min-width: 300px;
+    max-width: 1920px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
 .header .border-navigate {
@@ -63,8 +68,8 @@ body {
     text-align: center;
     margin-right: 10px;
     margin-left: 10px;
-    width: 100px;
-    line-height: 40px;
+    width: 110px;
+    line-height: 50px;
     font-weight: bold;
     font-size: 0.75em; /* utilizar 'em' por ser um valor relativo ao valor padrão de 1px (cada dispositivo pode ter um valor diferente para 1px) OBS: 1em = 16px */
     border-radius: 30%;
@@ -76,7 +81,7 @@ body {
     color: black;
     text-decoration: none;
     background-color: var(--main-color);
-    box-shadow: 5px 5px 5px rgba(144, 247, 236, 1);
+    box-shadow: 5px 5px 5px rgba(144, 247, 237, 0.425);
     border-radius: 30%;
 }
 
@@ -85,7 +90,7 @@ body {
     color: white;
     text-decoration: none;
     background-color: var(--main-color);
-    box-shadow: 5px 5px 5px rgba(144, 247, 236, 1);
+    box-shadow: 5px 5px 5px rgba(144, 247, 237, 0.425);
     border-radius: 30%;
 }
 
@@ -213,7 +218,7 @@ hr.title-section-line {
 
    .video
    {
-       width: 60%;
+       width: 70%;
        height: 160px;
    }
 }
