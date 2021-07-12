@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-
 :root {
     --main-color: linear-gradient(rgba(144, 247, 236, 1), rgba(50, 204, 188, 1));
 }
@@ -23,7 +22,6 @@ body {
     background-image: var(--main-color);
     width: 100%;
     height: 30px;
-    
 }
 
 .navigate {
@@ -32,11 +30,13 @@ body {
     align-items: center;
     flex-direction: row;
     height: 100px;
-    
 }
 
 .content {
     min-height: calc(100vh - 130px);
+    margin: 50px 10%;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer {
@@ -71,7 +71,8 @@ body {
     width: 110px;
     line-height: 50px;
     font-weight: bold;
-    font-size: 0.75em; /* utilizar 'em' por ser um valor relativo ao valor padrão de 1px (cada dispositivo pode ter um valor diferente para 1px) OBS: 1em = 16px */
+    font-size: 0.75em;
+    /* utilizar 'em' por ser um valor relativo ao valor padrão de 1px (cada dispositivo pode ter um valor diferente para 1px) OBS: 1em = 16px */
     border-radius: 30%;
     transition: all 400ms ease;
 }
@@ -100,7 +101,6 @@ body {
     background-image: var(--main-color);
 }
 
-
 .footer .navigate .menu-link a:hover,
 .footer .navigate .menu-link.active {
     background-color: black;
@@ -122,13 +122,11 @@ body {
 }
 
 .section {
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin: 25px 0;
+    width: 100%;
 }
 
-.section.section-inline {
+.section-inline {
     display: flex;
 }
 
@@ -137,12 +135,13 @@ hr {
     height: 1px;
 }
 
-hr.title-section-line {
+hr.title-section-line,
+hr.title-line {
     width: 50px;
-    
 }
 
-.section .title-section{
+.section .title-section,
+.title {
     font-family: 'Fredericka the Great', "Comic Sans MS", cursive;
     font-weight: bolder;
 }
@@ -153,7 +152,6 @@ hr.title-section-line {
     color: black;
     text-align: justify;
     text-indent: 2em;
-    
 }
 
 .table-champions {
@@ -182,7 +180,8 @@ hr.title-section-line {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 2px solid rgba(0, 0, 0, 0.5);
+    /* border: 2px solid rgba(0, 0, 0, 0.5); */
+    box-shadow: 0 0 0.4em black;
 }
 
 .page-title {
@@ -194,73 +193,51 @@ hr.title-section-line {
 .video {
     width: 60%;
     height: 400px;
-    
+    margin: auto;
 }
 
-.section-video {
-    text-align: center;
+@media (min-width: 10px) and (max-width: 780px) {
+    .footer-margem {
+        display: none;
+    }
 }
 
-@media (min-width: 10px) and (max-width: 780px)
-{
-  .footer-margem 
-   {
-    display: none;
-   }
+@media (min-width: 10px) and (max-width: 376px) {
+    .footer {
+        display: none;
+    }
+    .video {
+        width: 70%;
+        height: 160px;
+    }
 }
 
-@media (min-width: 10px) and (max-width: 376px)
-{
-  .footer 
-   {
-    display: none;
-   }
-
-   .video
-   {
-       width: 70%;
-       height: 160px;
-   }
+@media (min-width: 376px) and (max-width: 768px) {
+    .footer {
+        height: 130px;
+    }
+    .video {
+        width: 70%;
+        height: 250px;
+    }
 }
 
-@media (min-width: 376px) and (max-width: 768px)
-{
-  .footer 
-   {
-    height: 130px;
-   }
-
-   .video
-   {
-       width: 70%;
-       height: 250px;
-   }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .footer {
+        height: 160px;
+    }
+    .video {
+        width: 60%;
+        height: 280px;
+    }
 }
 
-@media (min-width: 769px) and (max-width: 1024px)
-{
-  .footer 
-   {
-    height: 160px;
-   }
-
-   .video
-   {
-       width: 60%;
-       height: 280px;
-   }
-}
-
-@media (min-width: 1025px)
-{
-  .footer 
-   {
-    height: 180px;
-   }
-
-   .video
-   {
-       width: 60%;
-       height: 400px;
-   }
+@media (min-width: 1025px) {
+    .footer {
+        height: 180px;
+    }
+    .video {
+        width: 60%;
+        height: 400px;
+    }
 }
