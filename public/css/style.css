@@ -16,6 +16,8 @@ body {
     align-items: center;
     justify-content: center;
     margin: auto;
+    color: var(--font-color);
+    background-color: var(--bg-color);
 }
 
 .header .border-navigate {
@@ -79,7 +81,7 @@ body {
 
 .header .navigate .menu-link a {
     display: block;
-    color: black;
+    color: var(--font-color);
     text-decoration: none;
     background-color: var(--main-color);
     box-shadow: 5px 5px 5px rgba(144, 247, 237, 0.425);
@@ -149,7 +151,7 @@ hr.title-line {
 .section .text-section {
     margin-top: 25px;
     margin-bottom: 25px;
-    color: black;
+    color: var(--font-color);
     text-align: justify;
     text-indent: 2em;
 }
