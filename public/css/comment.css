@@ -32,6 +32,7 @@
 .col-2 {
     width: 25%;
     align-items: center;
+    margin-left: 10%;
 }
 
 .comment-line {
@@ -50,6 +51,7 @@
 
 img.rate {
     width: 25px;
+    padding-top: 10% ;
 }
 
 .comment-flag {
@@ -86,4 +88,28 @@ button {
     color: black;
     text-align: center;
     padding: 5px 0;
+}
+
+@media (min-width: 10px) and (max-width: 376px) {
+    .input-name,
+    .input-email,
+    .input-selecao {
+        /* width: 30%; */
+        height: 80%;
+}
+    button{
+        height: 70%;
+        width: 100%;
+        font-size: 70%;
+
+    }
+   .rates{
+       padding: 1px 0;
+       font-size: 80%;
+   }
+
+   .rate{
+       padding-top: 15%;
+   }
+
 }

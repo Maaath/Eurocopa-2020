@@ -39,3 +39,18 @@
 .social-media-bar-item {
     width: 33.3%;
 }
+
+@media (min-width: 10px) and (max-width: 376px) {
+    .collaborator {
+        width: 80%;
+        height: 25%;
+    }
+    .social-media-bar {
+        width: 50%;    
+
+    }
+    .collaborator-name {
+        font-size: 100%;
+
+    }
+}

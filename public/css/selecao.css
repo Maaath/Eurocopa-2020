@@ -26,35 +26,10 @@
     font-size: 0.9em;
 }
 
-@media (max-width: 300px)
-{
-  .selecao img 
-   {
-    height: 25px;
-   }
-}
-
-@media (min-width: 600px)
-{
-  .selecao img 
-   {
-    height: 70px;
-   }
-}
-
-@media (min-width: 900px)
-{
-  .selecao img 
-   {
-    height: 100px;
-   }
-}
-
-@media (min-width: 1200px)
-{
-  .selecao img 
-   {
-    height: 150px;
-   }
+@media (min-width: 10px) and (max-width: 376px) {
+    .selecao img {
+      width: 80%;
+      height: 25%;
+    }
 }
 
