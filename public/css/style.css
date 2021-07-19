@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 :root {
     --main-color: linear-gradient(rgba(144, 247, 236, 1), rgba(50, 204, 188, 1));
+    --color: rgb(144, 247, 237);
 }
 
 * {
@@ -211,6 +212,18 @@ input:checked + .slider:before {
     display: flex;
 }
 
+.text-section #link {
+    text-decoration: none;
+    color: rgba(144, 247, 236, 1);
+    
+}
+
+.text-section #link:hover {
+    text-decoration:underline wavy;
+    text-decoration-color: rgb(144, 247, 237);
+    
+}
+
 hr {
     background-image: var(--main-color);
     height: 1px;
@@ -225,6 +238,8 @@ hr.title-line {
 .title {
     font-family: 'Fredericka the Great', "Comic Sans MS", cursive;
     font-weight: bolder;
+    /* background-image: linear-gradient(to right, var(--color), transparent);
+    text-indent: 10px; */
 }
 
 .section .text-section {
