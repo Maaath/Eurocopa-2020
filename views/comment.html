@@ -36,7 +36,9 @@
             <em id='change-txt'>Ativar MODO ESCURO!</em>
         </div>
 
-        <script src="../public/js/program.js"></script>
+        <script src="../public/js/home.js"></script>
+        <script src="../public/js/comment.js"></script>
+
     </header>
 
     <div class="content">
@@ -50,65 +52,67 @@
                 <h3 class="comment-text">Bora fúria</h3>
                 <hr class="comment-line">
                 <h4 class="comment-name">Matheus Macedo <img class="comment-flag" src="../assets/images/flags/espanha.jpg" alt="Seleção"></h4>
-                <img src="../assets/images/full_star.svg" alt="" class="rate" id="star-1">
-                <img src="../assets/images/full_star.svg" alt="" class="rate" id="star-2">
-                <img src="../assets/images/full_star.svg" alt="" class="rate" id="star-3">
-                <img src="../assets/images/full_star.svg" alt="" class="rate" id="star-4">
-                <img src="../assets/images/full_star.svg" alt="" class="rate" id="star-5">
+                <div id="star">
+                    <img src="../assets/images/full_star.svg" alt="" class="rate star-1">
+                    <img src="../assets/images/full_star.svg" alt="" class="rate star-2">
+                    <img src="../assets/images/full_star.svg" alt="" class="rate star-3">
+                    <img src="../assets/images/full_star.svg" alt="" class="rate star-4">
+                    <img src="../assets/images/full_star.svg" alt="" class="rate star-5">
+                </div>
             </div>
 
             <div class="comment">
                 <h3 class="comment-text">Bora CR7!</h3>
                 <hr class="comment-line">
                 <h4 class="comment-name">Maickel Alves <img class="comment-flag" src="../assets/images/flags/portugal.jpg" alt="Seleção"></h4>
-                <img src="../assets/images/full_star.svg" alt="" class="rate" id="star-1">
-                <img src="../assets/images/full_star.svg" alt="" class="rate" id="star-2">
-                <img src="../assets/images/full_star.svg" alt="" class="rate" id="star-3">
-                <img src="../assets/images/full_star.svg" alt="" class="rate" id="star-4">
-                <img src="../assets/images/empty_star.svg" alt="" class="rate" id="star-5">
+                <img src="../assets/images/full_star.svg" alt="" class="rate star-1">
+                <img src="../assets/images/full_star.svg" alt="" class="rate star-2">
+                <img src="../assets/images/full_star.svg" alt="" class="rate star-3">
+                <img src="../assets/images/full_star.svg" alt="" class="rate star-4">
+                <img src="../assets/images/full_star.svg" alt="" class="rate star-5">
             </div>
         </section>
 
 
 
         <section class="section">
-            <h3 class="form-title">Envie o seu comentário para a gente!</h3>
-            <form action="" class="form">
+            <h3 class="form-title">Envie o seu comentário!</h3>
+            <form onsubmit="formValid()" class="form">
                 <div class="col-1">
                     <div class="row row-1">
-                        <input class="input-name" type="text" placeholder="NOME">
-                        <select class="input-selecao" name="" id="">
-                            <option value="0">--Selecionar--</option>
+                        <input class="input-name" type="text" placeholder="NOME" required>
+                        <select class="input-selecao" name="" id="" required>
+                            <option value="">--Selecionar--</option>
                             <option value="0">Alemanha</option>
                             <option value="1">Áustria</option>
                             <option value="2">Bélgica</option>
-                            <option value="">Croácia</option>
-                            <option value="">Dinamarca</option>
-                            <option value="">Escócia</option>
-                            <option value="">Eslováquia</option>
-                            <option value="">Espanha</option>
-                            <option value="">Finlândia</option>
-                            <option value="">França</option>
-                            <option value="">País de Gales</option>
-                            <option value="">Holanda</option>
-                            <option value="">Hungria</option>
-                            <option value="">Inglaterra</option>
-                            <option value="">Itália</option>
-                            <option value="">Macedônia</option>
-                            <option value="">Polônia</option>
-                            <option value="">Portugal</option>
-                            <option value="">Rússia</option>
-                            <option value="">Suécia</option>
-                            <option value="">Suíça</option>
-                            <option value="">Rep. Tcheca</option>
-                            <option value="">Turquia</option>
-                            <option value="">Ucrânia</option>            
+                            <option value="3">Croácia</option>
+                            <option value="4">Dinamarca</option>
+                            <option value="5">Escócia</option>
+                            <option value="6">Eslováquia</option>
+                            <option value="7">Espanha</option>
+                            <option value="8">Finlândia</option>
+                            <option value="9">França</option>
+                            <option value="10">País de Gales</option>
+                            <option value="11">Holanda</option>
+                            <option value="12">Hungria</option>
+                            <option value="13">Inglaterra</option>
+                            <option value="14">Itália</option>
+                            <option value="15">Macedônia</option>
+                            <option value="16">Polônia</option>
+                            <option value="17">Portugal</option>
+                            <option value="18">Rússia</option>
+                            <option value="19">Suécia</option>
+                            <option value="20">Suíça</option>
+                            <option value="21">Rep. Tcheca</option>
+                            <option value="22">Turquia</option>
+                            <option value="23">Ucrânia</option>            
                         </select>
-                        <input class="input-email" type="email" placeholder="E-MAIL">
+                        <input class="input-email" type="email" placeholder="E-MAIL" required>
                         <!-- <span class="input-name-error" style="color:red">* e-mail inválido</span> -->
                     </div>
                     <div class="row row-2">
-                        <textarea name="" id="" rows="10" placeholder="DIGITE O SEU COMENTÁRIO"></textarea>
+                        <textarea class="input-comment" rows="10" placeholder="DIGITE O SEU COMENTÁRIO" required></textarea>
                     </div>
                 </div>
                 <div class="col-2">
@@ -116,11 +120,12 @@
                         <div class="rates">
                             <h5>NOTA PARA O EVENTO</h5>
                             <div class="rate">
-                                <img src="../assets/images/empty_star.svg" alt="" class="rate" id="star-1">
-                                <img src="../assets/images/empty_star.svg" alt="" class="rate" id="star-2">
-                                <img src="../assets/images/empty_star.svg" alt="" class="rate" id="star-3">
-                                <img src="../assets/images/empty_star.svg" alt="" class="rate" id="star-4">
-                                <img src="../assets/images/empty_star.svg" alt="" class="rate" id="star-5">
+                                <img src="../assets/images/empty_star.svg" alt="" class="rate" id="star-1" onclick="changeStar(1)">
+                                <img src="../assets/images/empty_star.svg" alt="" class="rate" id="star-2" onclick="changeStar(2)">
+                                <img src="../assets/images/empty_star.svg" alt="" class="rate" id="star-3" onclick="changeStar(3)">
+                                <img src="../assets/images/empty_star.svg" alt="" class="rate" id="star-4" onclick="changeStar(4)">
+                                <img src="../assets/images/empty_star.svg" alt="" class="rate" id="star-5" onclick="changeStar(5)">
+                                <input type="hidden" name="star-name" class="input-star">
                             </div>
                         </div>
                     </div>
