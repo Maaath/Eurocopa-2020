@@ -36,8 +36,12 @@
     display: flex;
 }
 
-.social-media-bar-item {
+a.social-media-bar-link {
     width: 33.3%;
+}
+
+.social-media-bar-item {
+    width: 100%;
 }
 
 @media (min-width: 10px) and (max-width: 376px) {
@@ -46,11 +50,9 @@
         height: 25%;
     }
     .social-media-bar {
-        width: 50%;    
-
+        width: 50%;
     }
     .collaborator-name {
         font-size: 100%;
-
     }
 }
