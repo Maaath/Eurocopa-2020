@@ -51,11 +51,12 @@
 
 img.rate {
     width: 25px;
-    padding-top: 5% ;
+    padding-top: 5%;
 }
 
 .comment-flag {
     height: 20px;
+    margin-left: 0.5em;
 }
 
 .input-name,
@@ -96,20 +97,17 @@ button {
     .input-selecao {
         /* width: 30%; */
         height: 80%;
-}
-    button{
+    }
+    button {
         height: 70%;
         width: 100%;
         font-size: 70%;
-
     }
-   .rates{
-       padding: 1px 0;
-       font-size: 80%;
-   }
-
-   .rate{
-       padding-top: 15%;
-   }
-
+    .rates {
+        padding: 1px 0;
+        font-size: 80%;
+    }
+    .rate {
+        padding-top: 15%;
+    }
 }

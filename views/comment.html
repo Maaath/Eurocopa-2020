@@ -46,38 +46,11 @@
             <h3 class="title-section">Comentários</h3>
             <hr class="title-section-line">
         </section>
-        <section class="section comments">
-
-            <div class="comment">
-                <h3 class="comment-text">Bora fúria</h3>
-                <hr class="comment-line">
-                <h4 class="comment-name">Matheus Macedo <img class="comment-flag" src="../assets/images/flags/espanha.jpg" alt="Seleção"></h4>
-                <div id="star">
-                    <img src="../assets/images/full_star.svg" alt="" class="rate star-1">
-                    <img src="../assets/images/full_star.svg" alt="" class="rate star-2">
-                    <img src="../assets/images/full_star.svg" alt="" class="rate star-3">
-                    <img src="../assets/images/full_star.svg" alt="" class="rate star-4">
-                    <img src="../assets/images/full_star.svg" alt="" class="rate star-5">
-                </div>
-            </div>
-
-            <div class="comment">
-                <h3 class="comment-text">Bora CR7!</h3>
-                <hr class="comment-line">
-                <h4 class="comment-name">Maickel Alves <img class="comment-flag" src="../assets/images/flags/portugal.jpg" alt="Seleção"></h4>
-                <img src="../assets/images/full_star.svg" alt="" class="rate star-1">
-                <img src="../assets/images/full_star.svg" alt="" class="rate star-2">
-                <img src="../assets/images/full_star.svg" alt="" class="rate star-3">
-                <img src="../assets/images/full_star.svg" alt="" class="rate star-4">
-                <img src="../assets/images/full_star.svg" alt="" class="rate star-5">
-            </div>
-        </section>
-
-
+        <section class="section comments"></section>
 
         <section class="section">
             <h3 class="form-title">Envie o seu comentário!</h3>
-            <form onsubmit="formValid()" class="form">
+            <form onsubmit="formValid(); return false" id='comment-form' class="form">
                 <div class="col-1">
                     <div class="row row-1">
                         <input class="input-name" type="text" placeholder="NOME" required>
