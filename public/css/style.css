@@ -89,20 +89,21 @@ body {
     border-radius: 30%;
 }
 
+ul {
+    list-style-position: inside;
+}
+
+
 /* Dark mode button */
 
 [data-theme="dark"] {
-            
     --font-color: white;
     --bg-color: black;
-    
 }
 
 [data-theme="light"] {
-    
     --font-color: black;
     --bg-color: white;
-    
 }
 
 .theme-switch-wrapper {
@@ -116,17 +117,18 @@ em {
     font-size: 1rem;
 }
 
-    
 .theme-switch {
     display: inline-block;
-    min-height: 34px;           /* 34px padrão */
+    min-height: 34px;
+    /* 34px padrão */
     position: relative;
-    min-width: 60px;           /* 60px padrão */
-    }
+    min-width: 60px;
+    /* 60px padrão */
+}
 
 .theme-switch input {
-    display:none;
-    }
+    display: none;
+}
 
 .slider {
     background-color: #ccc;
@@ -137,7 +139,7 @@ em {
     right: 0;
     top: 0;
     transition: .4s;
-    }
+}
 
 .slider:before {
     background-color: #fff;
@@ -148,23 +150,25 @@ em {
     position: absolute;
     transition: .4s;
     width: 26px;
-    }
+}
 
-input:checked + .slider {
+input:checked+.slider {
     background-image: var(--main-color);
-    }
+}
 
-input:checked + .slider:before {
-    transform: translateX(26px); /* 26px padrão */
-    }
+input:checked+.slider:before {
+    transform: translateX(26px);
+    /* 26px padrão */
+}
 
 .slider.round {
     border-radius: 34px;
-    }
+}
 
 .slider.round:before {
     border-radius: 50%;
-    }
+}
+
 
 /* Footer Menu */
 
@@ -191,6 +195,7 @@ input:checked + .slider:before {
 .copyright {
     text-align: center;
     color: white;
+    width: 50%;
     margin: 5px;
 }
 
@@ -215,13 +220,11 @@ input:checked + .slider:before {
 .text-section #link {
     text-decoration: none;
     color: rgba(144, 247, 236, 1);
-    
 }
 
 .text-section #link:hover {
-    text-decoration:underline wavy;
+    text-decoration: underline wavy;
     text-decoration-color: rgb(144, 247, 237);
-    
 }
 
 hr {
@@ -296,18 +299,15 @@ hr.title-line {
     .footer-margem {
         display: none;
     }
-
 }
 
 @media (min-width: 10px) and (max-width: 376px) {
     .footer {
         display: none;
     }
-
-    .theme-switch-wrapper{
+    .theme-switch-wrapper {
         display: none;
     }
-
     .video {
         width: 70%;
         height: 160px;
