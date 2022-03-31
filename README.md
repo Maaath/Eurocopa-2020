@@ -22,6 +22,16 @@
 
 <h2>:page_with_curl: Description</h2>
 <p>Website developed only for student purposes based on the "Europa 2020" event, to fix HTML5+CSS3+JS knowledges.</p>
+<p>Content:</p> 
+<li>html tags</li> 
+<li> css styles</li> 
+<li>navigation</li> 
+<li>segmentation (header, sections, footer)</li> 
+<li>media (video and image)</li> 
+<li>table</li> 
+<li>list</li> 
+<li>form</li> 
+<li>and dynamic page</li>
 
 <h2>:newspaper: Sections</h2>
 <p>The website has five sections :
@@ -30,6 +40,7 @@
 <li><b>Schedule</b>: Informations about the group stage and knockout stage</li>
 <li><b>Comments</b>: Section to the user let a comment (has not data persistence)</li>
 <li><b>About</b>: Our Social Medias</li>
+<li>:heavy_plus_sign:<b> Plus</b>: Dark Mode button</li>
 
 <h2>:wrench: Credits</h2>
 <table>
